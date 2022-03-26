@@ -1,9 +1,32 @@
 .col {
     border: 1px solid white;
+    height: 6rem;
 }
 .container-fluid {
-    background: papayawhip;
+    background: #FDCA6C;
 }
 .container{
-    background: blueviolet;
+    background: #00B794;
+}
+
+.col-12 {
+    border: 1px solid white;
+    height: 6rem;
+}
+.col-md-6{
+    border: 1px solid white;
+    height: 6rem;
+}
+.col-6{
+    border: 1px solid white;
+    height: 6rem;
+} 
+.col-md-4{
+    border: 1px solid white;
+    height: 6rem;
+}
+
+.col-lg {
+    border: 1px solid white;
+    height: 6rem;
 }
