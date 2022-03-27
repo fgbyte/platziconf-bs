@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto3</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body {
+            background: papayawhip;
+        }
+        .container {
+            color: #000000;
+        }
+        #col{
+            background: #D52E30;
+            height: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Reto3</h1>
+    <!-- Hay q usar la parte de offseting column de la documentacion en el cap de reorder -->
+    
+      <div class="container">
+          <div class="row">
+            <!-- <div class="col-md-6">1</div> -->
+            <div class="col-md-6 offset-md-6" id="col">a</div>
+            <!-- la fila tiene una columna q ocupa a partir de la 6 en el md viewport -->
+          </div>
+
+          <div class="row">
+              <div class="col-8 offset-md-2 col-md-8 offset-md-2" id="col">b</div> 
+          </div>
+
+          <div class="row">
+              <div class="col-10 offset-10 col-md-2 offset-md-10" id="col">c</div>
+          </div>
+
+
+     
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BS Grid</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <h4 style="text-align: center;">ESTRUCTURA DE LA GRID</h4>
+    <p>BS es full responsive y se trabaja en MobileFirst</p>
+    <div class="container-fluid">
+        <!-- Para que entren 2 col en la misma row sus anchos deben ser <=12 -->
+        <!-- Si no se especifica el ancho de las colunmnas BS las pone iguales -->
+        <div class="row">
+            <div class="col">1 igual</div>
+            <div class="col">2 igual ->6</div>
+      </div>
+        
+        <div class="row">
+            <div class="col-3">1-no especificado</div>
+            <div class="col-9">2-9 -> total =12</div>
+      </div>
+      <!-- En viewport maximo de las col es de 12, si lo supera BS hace un wrap a la col mas grande -->
+        <div class="row">
+            <div class="col-4">1-4</div>
+            <div class="col-9">2-9 -> wrap</div>
+    </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+        </div>
+        <!-- BREACKPOINTS SO EASY -->
+    </div>
+    <h4 style="text-align: center;">BREACKPOINTS</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3">1</div>
+            <div class="col-12 col-lg-9" style="background: yellow;">2</div>
+        </div>
+    </div>
+    <li>Cada col va a ser de 12, hasta que se llegue al BREACKPOINT de patalla "lg" -> grande = 960px</li>
+    <li>Se comienza por col-# poque BS es MobileFirst</li>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-4 col-lg-2">1</div>
+            <div class="col col-md-8 col-lg-10" style="background: yellow;">2</div>
+        </div>
+    </div>
+    <li>Cada col va a ser igual ->6, hasta que se llegue al BREACKPOINT "md" = 720px -> 8 y 4, y hasta el "lg" = 960px -> 2 y 10</li>
+    
+
+
+    <h4 style="text-align: center;">Equal width multiple line</h4>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+      <p style="text-align: center;">Add .w-100 como span entre col y col 🙄 para separarlas en diferentes rows.</p>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">col</div>
+          <div class="w-100"></div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="w-100"></div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="w-100"></div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+      <li>de esta forma rapida todas las col estaran separadas y tendran las misma longitud</li>
+
+</body>
+
+</html>
